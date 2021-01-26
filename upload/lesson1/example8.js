@@ -1,6 +1,9 @@
-require('dotenv').config();
-const cloudinary = require('cloudinary').v2;
+require("dotenv").config();
+const cloudinary = require("cloudinary").v2;
 
-cloudinary.uploader.upload('https://upload.wikimedia.org/wikipedia/commons/6/68/Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg')
-    .then(uploadResult => console.log(uploadResult))
-    .catch(error => console.error(error));
+cloudinary.uploader
+  .upload(
+    "https://lh3.googleusercontent.com/wptLriYw_B1HCdPBY4jIoWtBRcAOXrxt-HyF9hcoatbJUuIqrZocqyV2HcuYDT9AY4p4ac265XnL2-y4G9hreCUriz0ioWlglHOa9gVItTGQ0x5IELduuzx9syfUozgaaYNQMCqbnti0m4sCB3PPIURi2627HYZbohx7feIPeMdP68Dx6dypkItuQOwXmPccbuiN9RRXHMjdsIUzfgxqeDssmcfHkXHKr4UiUfhN5gWqhpcUw9BYTzOgKpGT-BetjcBiEnOQc8G8-iunBiFKb4IAPIGVtGA4dkKNSdbSXhmAFnZbVDTDml7Nju2mcstvi70y15SaeIto507eNtwQ3-mtuK5oZP5yaLxY827tq9XLS783JyoXxvrz2JHDx4lvXYCn2DOgTXmskGXr2PF_2LL3zWa46eCq1-GuH9MIQVifRpnL0_RjxC4FefSAw0Vx-4DxtSjJXIfziXVnw8u9VG52NghKKgWMYmqcfsJPBErjh7myG-UMnASvOJKYkXaDysGYV5skF0uISbZK4bYmWtWmPTrxaT-Y9Se2WdR8yFaJX_AAg-fM7gtCzlChn-5Wl6p3eRwdDXZSHugNeGmMVAEduIo3IiD1YJf4G8xNcPD6296XaGPP1kXLn-nbxEzaNmSQ_9BmjnVTmNhIlbKIsvRf-g3ZnYA0JxoU6wL8S2nIonhCZh0rWeCfdjJj_OI=w165-h220-no?authuser=1"
+  )
+  .then((uploadResult) => console.log(uploadResult))
+  .catch((error) => console.error(error));

@@ -1,8 +1,9 @@
-require('dotenv').config();
-const cloudinary = require('cloudinary').v2;
+require("dotenv").config();
+const cloudinary = require("cloudinary").v2;
 
-cloudinary.uploader.upload('assets/images/kitten.jpg', {
-        public_id: 'cute_animals/cute_cats/kitten'
-    })
-    .then(uploadResult => console.log(uploadResult))
-    .catch(error => console.error(error));
+cloudinary.uploader
+  .upload("assets/images/kitten.jpg", {
+    public_id: "cute_animals/cute_cats/kitty_cat/kitten",
+  })
+  .then((uploadResult) => console.log(uploadResult))
+  .catch((error) => console.error(error));
